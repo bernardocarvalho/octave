@@ -1,0 +1,2 @@
+%Exp de Pe S  LFEB %Constantes%MedidasM=0.5393 % Massa da AmostraeM= 0.1e-3Lx=0.05070Ly=0.05060Lz=0.08370eL=0.02e-3tLx=9.0e-6 % tempo onda StTx=14.7e-6  % tempo onda Set=1e-6;%calculos intermediosV = Lx*Ly*Lz % Volume da AmostraeV=eL *( Lx*Ly + Ly*Lz + Lx*Lz)rho=M/Verho= rho*( eM/M + eV/V)vLx=Lx/tLxevLx=vLx*(eL/Lx+ et/tLx)vTx=Lx/tTxevTx=vTx*(eL/Lx+ et/tTx)%ert=et/t
+%Constantes Elasticasmux = vTx^2 *rhoemux=2*(evTx)*vTx *rho + vTx^2 *erhoKx=vLx^2 *rho -4/3 * muxsigma=0.5*(((vLx/vTx)^2-2)/((vLx/vTx)^2-1))
